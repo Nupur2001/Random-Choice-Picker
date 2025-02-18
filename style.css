@@ -38,6 +38,7 @@ textarea {
   padding: 10px 18px;
   color: white;
   background-color: #f28500;
+  margin: 0 5px;
 }
 
 .keyword.highlight {
