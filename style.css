@@ -47,6 +47,8 @@ textarea {
 
 .flash {
   animation: flashAnimation 2s alternate;
+  /* transition: all 2s ease; */
+  /* transform: scale(1.1); */
 }
 
 @keyframes flashAnimation {
@@ -55,7 +57,7 @@ textarea {
     background-color: rgb(63, 63, 156);
   }
   50% {
-    opacity: 0;
+    opacity: 0.5;
     background-color: rgb(63, 63, 156);
   }
   100% {
