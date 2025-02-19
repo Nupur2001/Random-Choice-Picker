@@ -4,16 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let keywords = document.querySelector(".keywords");
 
   textarea.addEventListener("keyup", (e) => {
-    let enterClickCount=0
+    let enterClickCount = 0;
     keywords.innerHTML = "";
     keywordCreate(e.target.value);
 
     if (e.key === "Enter") {
       randomKeywordSelect();
-      textarea.value=""
+      textarea.value = "";
     }
-    if (enterClickCount===2) {
-      keywordsRemove()
+    if (enterClickCount === 2) {
+      keywordsRemove();
     }
   });
 
@@ -41,16 +41,25 @@ document.addEventListener("DOMContentLoaded", () => {
       allKeywords[Math.floor(Math.random() * allKeywords.length)];
     let selectedKeyword = document.createElement("span");
     selectedKeyword.classList.add("highlight");
+
+    function flash() {
+      let allKeywords = document.querySelectorAll(".keyword");
+      allKeywords.forEach((k) => {
+        k.classList.add("flash");
+      });
+    }
+
     function highlight() {
+      flash();
       randomKeyword.classList.add("highlight");
     }
     setTimeout(highlight(), 500);
     console.log(randomKeyword);
   }
 
-  function keywordsRemove(){
+  function keywordsRemove() {
     let allKeywords = document.querySelectorAll(".keyword");
-    allKeywords.remove()
+    allKeywords.remove();
   }
 });
 //   allKeywords,nokeywords,randomKeywords
