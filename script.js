@@ -45,6 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function flash() {
       allKeywords.forEach((k) => {
         k.classList.add("flash");
+        let randomKeys=[(Math.floor(Math.random()*k.length))]
+        
+        
+        console.log(randomKeys)
       });
     }
 
