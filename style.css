@@ -26,7 +26,7 @@ h2 {
 textarea {
   border: none;
   height: 155px;
-  width: 500px;
+  width: inherit;
   font-size: 1.1rem;
   padding: 10px;
   margin-bottom: 10px;
@@ -38,7 +38,7 @@ textarea {
   padding: 10px 18px;
   color: white;
   background-color: #f28500;
-  margin: 0 5px;
+  margin: 3px 5px;
 }
 
 .keyword.highlight {
