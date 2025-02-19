@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     selectedKeyword.classList.add("highlight");
 
     function flash() {
-      let allKeywords = document.querySelectorAll(".keyword");
       allKeywords.forEach((k) => {
         k.classList.add("flash");
       });
